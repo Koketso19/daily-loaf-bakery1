@@ -1,10 +1,7 @@
 /* ========================================
    THE DAILY LOAF - MAIN STYLESHEET
-   Author: Student Project
-   Description: Responsive bakery website
    ======================================== */
 
-/* ---------- RESET & BASE ---------- */
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +54,7 @@ a {
     background: #D4AF37;
 }
 
-/* ---------- BUTTONS ---------- */
+/* BUTTONS */
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -77,7 +74,6 @@ a {
 .btn-primary:hover {
     background-color: #c49b2a;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .btn-secondary {
@@ -91,7 +87,7 @@ a {
     color: #333333;
 }
 
-/* ---------- HEADER & NAVIGATION ---------- */
+/* HEADER & NAVIGATION */
 header {
     background-color: #FFF8E7;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -144,11 +140,9 @@ nav ul li a.active {
     cursor: pointer;
 }
 
-/* ---------- HERO SECTION ---------- */
+/* HERO SECTION */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x800/F5E6D3/8B5A2B?text=Bakery+Hero');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #8B5A2B;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -177,7 +171,7 @@ nav ul li a.active {
     margin: 0 10px;
 }
 
-/* ---------- FEATURES SECTION ---------- */
+/* FEATURES SECTION */
 .features {
     padding: 4rem 0;
     background-color: #FFFFFF;
@@ -211,7 +205,7 @@ nav ul li a.active {
     color: #8B5A2B;
 }
 
-/* ---------- SPECIALS SECTION ---------- */
+/* SPECIALS SECTION */
 .specials {
     padding: 4rem 0;
     background-color: #FFF8E7;
@@ -238,7 +232,11 @@ nav ul li a.active {
 .special-img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    background-color: #D4AF37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
 }
 
 .special-info {
@@ -257,7 +255,7 @@ nav ul li a.active {
     color: #D4AF37;
 }
 
-/* ---------- HOURS BANNER ---------- */
+/* HOURS BANNER */
 .hours-banner {
     background-color: #8B5A2B;
     color: white;
@@ -276,7 +274,7 @@ nav ul li a.active {
     margin-top: 0.5rem;
 }
 
-/* ---------- PAGE HEADER ---------- */
+/* PAGE HEADER */
 .page-header {
     background: linear-gradient(135deg, #8B5A2B 0%, #D4AF37 100%);
     color: white;
@@ -290,7 +288,7 @@ nav ul li a.active {
     margin-bottom: 0.5rem;
 }
 
-/* ---------- ABOUT PAGE ---------- */
+/* ABOUT PAGE */
 .about-story {
     padding: 4rem 0;
 }
@@ -302,9 +300,14 @@ nav ul li a.active {
     align-items: center;
 }
 
-.about-image img {
-    width: 100%;
+.about-image {
+    background-color: #D4AF37;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 12px;
+    font-size: 2rem;
 }
 
 .values {
@@ -336,11 +339,16 @@ nav ul li a.active {
     text-align: center;
 }
 
-.team-member img {
-    width: 100%;
-    max-width: 200px;
+.team-member .avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #D4AF37;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
 }
 
 .team-member .bio {
@@ -349,7 +357,7 @@ nav ul li a.active {
     margin-top: 0.5rem;
 }
 
-/* ---------- MENU PAGE ---------- */
+/* MENU PAGE */
 .menu-section {
     padding: 3rem 0;
 }
@@ -386,7 +394,7 @@ nav ul li a.active {
     color: #D4AF37;
 }
 
-/* ---------- ORDER PAGE ---------- */
+/* ORDER PAGE */
 .order-form-section {
     padding: 4rem 0;
 }
@@ -446,7 +454,7 @@ nav ul li a.active {
     color: #D4AF37;
 }
 
-/* ---------- CONTACT PAGE ---------- */
+/* CONTACT PAGE */
 .locations {
     padding: 4rem 0;
     background-color: #FFF8E7;
@@ -478,11 +486,13 @@ nav ul li a.active {
 
 .map-placeholder {
     margin-top: 1rem;
-}
-
-.map-placeholder img {
-    width: 100%;
+    background-color: #D4AF37;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 8px;
+    color: #333;
 }
 
 .contact-form-section {
@@ -535,7 +545,7 @@ nav ul li a.active {
     margin-bottom: 0.5rem;
 }
 
-/* ---------- FOOTER ---------- */
+/* FOOTER */
 footer {
     background-color: #2C2C2C;
     color: #f0f0f0;
@@ -577,7 +587,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
@@ -616,7 +626,8 @@ footer {
     
     .hero-buttons .btn {
         display: block;
-        margin: 10px 0;
+        margin: 10px auto;
+        width: 80%;
     }
     
     .section-title {
