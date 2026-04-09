@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Loaf | Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🥖 The Daily Loaf</h1>
+                    <p class="tagline">Artisan Bakery & Patisserie</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order Online</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <!-- Two Locations (Requirement: more than 1 location) -->
+        <section class="locations">
+            <div class="container">
+                <h3 class="section-title">Our Locations</h3>
+                <div class="locations-grid">
+                    <!-- Location 1 -->
+                    <div class="location-card">
+                        <h4>📍 Main Street Bakery</h4>
+                        <p class="address">42 Main Street<br>Woodstock, Cape Town<br>7925</p>
+                        <p class="hours"><strong>Hours:</strong><br>
+                        Tuesday - Friday: 7am - 4pm<br>
+                        Saturday - Sunday: 8am - 3pm<br>
+                        Closed Mondays</p>
+                        <p class="phone">📞 (021) 123-4567</p>
+                        <div class="map-placeholder">
+                            <img src="https://placehold.co/400x200/F5E6D3/8B5A2B?text=Map+-+Main+St" alt="Main Street Location Map">
+                        </div>
+                    </div>
+
+                    <!-- Location 2 (Second location as required) -->
+                    <div class="location-card">
+                        <h4>📍 Sea Point Cafe</h4>
+                        <p class="address">89 Beach Road<br>Sea Point, Cape Town<br>8005</p>
+                        <p class="hours"><strong>Hours:</strong><br>
+                        Wednesday - Sunday: 8am - 2pm<br>
+                        (Takeaway only)</p>
+                        <p class="phone">📞 (021) 987-6543</p>
+                        <div class="map-placeholder">
+                            <img src="https://placehold.co/400x200/F5E6D3/8B5A2B?text=Map+-+Sea+Point" alt="Sea Point Location Map">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form action="#" method="post" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Name *</label>
+                                    <input type="text" id="contact-name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email *</label>
+                                    <input type="email" id="contact-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="contact-message" style="margin-top: 1rem; display: none;"></div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <div class="info-item">
+                            <h4>📧 Email Us</h4>
+                            <p>General: hello@dailyloaf.com</p>
+                            <p>Orders: orders@dailyloaf.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📞 Call Us</h4>
+                            <p>Main Bakery: (021) 123-4567</p>
+                            <p>Sea Point: (021) 987-6543</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>💬 Follow Us</h4>
+                            <p>Instagram: @dailyloaf_ct</p>
+                            <p>Facebook: The Daily Loaf</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📋 Wholesale Inquiries</h4>
+                            <p>For cafe and restaurant partnerships:<br>
+                            wholesale@dailyloaf.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Do you offer gluten-free options?</h4>
+                        <p>Yes! We have gluten-free sourdough available on Wednesdays and Saturdays.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can I place a large order for an event?</h4>
+                        <p>Absolutely. Please email us at least 48 hours in advance for catering orders.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you deliver?</h4>
+                        <p>Yes, free delivery within 5km on orders over R150.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Daily Loaf</h4>
+                    <p>Artisan bakery bringing warmth and quality to your daily bread.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 42 Main Street, Cape Town</p>
+                    <p>📞 (021) 123-4567</p>
+                    <p>✉️ hello@dailyloaf.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a> | <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Daily Loaf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
