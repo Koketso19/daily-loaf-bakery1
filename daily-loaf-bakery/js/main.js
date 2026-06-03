@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const name = document.getElementById('name')?.value || '';
             const email = document.getElementById('email')?.value || '';
             const phone = document.getElementById('phone')?.value || '';
+            const pickupLocation = document.getElementById('pickup-location')?.value || '';
             const pickupDate = document.getElementById('pickup-date')?.value || '';
             const pickupTime = document.getElementById('pickup-time')?.value || '';
             
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedItems = Array.from(checkboxes).map(cb => cb.value);
             
             // Validation
-            if (!name || !email || !phone || !pickupDate || !pickupTime) {
+            if (!name || !email || !phone || !pickupLocation || !pickupDate || !pickupTime) {
                 showMessage(orderMessage, 'Please fill in all required fields.', 'error');
                 return;
             }
@@ -48,12 +49,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Success message
             showMessage(orderMessage, 
-                `Thank you ${name}! Your order has been received. We'll send confirmation to ${email}. Pickup: ${pickupDate} at ${pickupTime}.`, 
+                `Thank you ${name}! Your order has been received. Pickup at ${pickupLocation} on ${pickupDate} at ${pickupTime}. Confirmation sent to ${email}.`, 
                 'success'
             );
             
-            // Reset form (optional)
-            // orderForm.reset();
+            // Reset form
+            orderForm.reset();
         });
     }
     
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'success'
             );
             
-            // contactForm.reset();
+            contactForm.reset();
         });
     }
     

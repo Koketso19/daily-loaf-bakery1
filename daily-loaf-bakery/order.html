@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Loaf | Order Online</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🥖 The Daily Loaf</h1>
+                    <p class="tagline">Artisan Bakery & Patisserie</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html" class="active">Order Online</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">☰</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Order Online</h2>
+                <p>Place your order for pickup at either location</p>
+            </div>
+        </section>
+
+        <section class="order-form-section">
+            <div class="container">
+                <div class="order-grid">
+                    <!-- Order Form -->
+                    <div class="order-form">
+                        <h3>Order Details</h3>
+                        <form id="orderForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="pickup-location">Pickup Location *</label>
+                                <select id="pickup-location" name="pickup-location" required>
+                                    <option value="">Select location</option>
+                                    <option value="Main Street Bakery">Main Street Bakery - Woodstock</option>
+                                    <option value="Sea Point Cafe">Sea Point Cafe - Beach Road</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Select Items *</label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="item" value="Classic Sourdough - R45"> Classic Sourdough - R45</label>
+                                    <label><input type="checkbox" name="item" value="Rye Sourdough - R52"> Rye Sourdough - R52</label>
+                                    <label><input type="checkbox" name="item" value="Butter Croissant - R28"> Butter Croissant - R28</label>
+                                    <label><input type="checkbox" name="item" value="Chocolate Croissant - R32"> Chocolate Croissant - R32</label>
+                                    <label><input type="checkbox" name="item" value="Cinnamon Roll - R32"> Cinnamon Roll - R32</label>
+                                    <label><input type="checkbox" name="item" value="Gluten-Free Sourdough - R58"> Gluten-Free Sourdough - R58</label>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="pickup-date">Pickup Date *</label>
+                                    <input type="date" id="pickup-date" name="pickup-date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pickup-time">Pickup Time *</label>
+                                    <select id="pickup-time" name="pickup-time" required>
+                                        <option value="">Select time</option>
+                                        <option value="7:00-8:00">7:00 - 8:00 AM</option>
+                                        <option value="8:00-9:00">8:00 - 9:00 AM</option>
+                                        <option value="9:00-10:00">9:00 - 10:00 AM</option>
+                                        <option value="10:00-11:00">10:00 - 11:00 AM</option>
+                                        <option value="11:00-12:00">11:00 AM - 12:00 PM</option>
+                                        <option value="12:00-13:00">12:00 - 1:00 PM</option>
+                                        <option value="13:00-14:00">1:00 - 2:00 PM</option>
+                                        <option value="14:00-15:00">2:00 - 3:00 PM</option>
+                                        <option value="15:00-16:00">3:00 - 4:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests (Optional)</label>
+                                <textarea id="special-requests" rows="3" placeholder="Any allergies or special instructions?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Place Order</button>
+                        </form>
+                        <div id="order-message" style="display: none;"></div>
+                    </div>
+
+                    <!-- Order Info Sidebar -->
+                    <div class="order-info">
+                        <div class="info-card">
+                            <h4>📋 Pickup Info</h4>
+                            <p><strong>Main Street Bakery</strong><br>
+                            42 Main Street, Woodstock<br>
+                            Tue-Sun: 7am-4pm</p>
+                            <hr>
+                            <p><strong>Sea Point Cafe</strong><br>
+                            89 Beach Road, Sea Point<br>
+                            Wed-Sun: 8am-2pm</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>📞 Need Help?</h4>
+                            <p>Call us: <span class="phone-large">(021) 123-4567</span></p>
+                        </div>
+                        <div class="info-card">
+                            <h4>⏰ Advance Notice</h4>
+                            <p>Please order at least 2 hours before pickup time.</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>💰 Payment</h4>
+                            <p>Pay in-store when you pick up. Cash and card accepted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>The Daily Loaf</h4>
+                    <p>Artisan bakery bringing warmth and quality to your daily bread.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 42 Main Street, Cape Town</p>
+                    <p>📞 (021) 123-4567</p>
+                    <p>✉️ hello@dailyloaf.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a> | <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Daily Loaf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

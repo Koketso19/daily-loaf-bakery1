@@ -3,17 +3,17 @@
 
 ## Changelog
 
-### Part 1 Feedback Implementation (Worth 10 marks)
+### Part 1 Feedback Implementation
 
 | Feedback Received | Changes Implemented |
 |-------------------|---------------------|
 | Missing README document | Created comprehensive README with sitemap, changelog, references |
-| Missing sitemap | Added visual sitemap structure above |
+| Missing sitemap | Added visual sitemap structure |
 | Missing changelog | Added detailed version history table |
-| Missing references | Added Harvard-style references below |
+| Missing references | Added Harvard-style references |
 | Navigation menu issues | Fixed active states, added mobile menu toggle |
 | Insufficient content on about page | Added team bios, values section, bakery story |
-| Only one location shown | Added second location (Sea Point Cafe) to contact page |
+| Only one location shown | Added second location (Sea Point Cafe) |
 | Images not responsive | Added srcset and sizes attributes to all images |
 | Typography not scaling | Added font-size reductions in media queries |
 | No form validation | Added JavaScript validation for order and contact forms |
@@ -22,35 +22,16 @@
 
 | Date | Version | Changes |
 |------|---------|---------|
-| 2026-06-03 | v1.0 | Created all 5 HTML pages (index, about, menu, order, contact) |
-| 2026-06-03 | v2.0 | Added external CSS with base styles, reset, color scheme |
-| 2026-06-03 | v2.1 | Added CSS Grid for features, Flexbox for navigation |
+| 2026-06-03 | v1.0 | Created all 5 HTML pages |
+| 2026-06-03 | v2.0 | Added external CSS with base styles |
+| 2026-06-03 | v2.1 | Added CSS Grid and Flexbox layouts |
 | 2026-06-03 | v2.2 | Added pseudo-classes (:hover, :active, :focus) |
-| 2026-06-03 | v2.3 | Added responsive media queries for tablet (768px) and mobile (480px) |
+| 2026-06-03 | v2.3 | Added responsive media queries (768px, 480px) |
 | 2026-06-03 | v2.4 | Added typography adjustments in media queries |
 | 2026-06-03 | v2.5 | Added srcset for responsive images on all pages |
-| 2026-06-03 | v2.6 | Added JavaScript: mobile menu toggle + form validation |
-| 2026-06-03 | v2.7 | Added two locations on contact page (Main Street + Sea Point) |
-| 2026-06-03 | v2.8 | Added README with sitemap, changelog, references |
-
----
-
-## Responsive Design Evidence
-
-### Testing Methodology
-
-| Device | Screen Width | Breakpoint |
-|--------|--------------|------------|
-| Desktop | > 768px | Full layout, horizontal navigation |
-| Tablet | 768px | Single column, hamburger menu |
-| Mobile | 480px | Single column, smaller fonts, hamburger menu |
-
-### How to Test
-
-1. Open website in Chrome
-2. Press F12 to open DevTools
-3. Click the Device Toolbar icon (Ctrl+Shift+M)
-4. Select different devices to test responsiveness
+| 2026-06-03 | v2.6 | Added JavaScript for mobile menu and form validation |
+| 2026-06-03 | v2.7 | Added two locations on contact page |
+| 2026-06-03 | v2.8 | Completed README with sitemap, changelog, references |
 
 ---
 
@@ -71,7 +52,7 @@ Mozilla Developer Network. (2026). *Responsive Images (srcset)*. Available at: h
 W3Schools. (2026). *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 3 June 2026).
 
 ### Images
-Placehold.co. (2026). *Placeholder Image Service*. Available at: https://placehold.co (Accessed: 3 June 2026). *Note: Placeholder images used for demonstration. Final website will use original bakery photography.*
+Placehold.co. (2026). *Placeholder Image Service*. Available at: https://placehold.co (Accessed: 3 June 2026).
 
 ### Content
 All written content (bakery story, menu descriptions, team bios, FAQ) is original work created for this assignment.
@@ -80,52 +61,31 @@ All written content (bakery story, menu descriptions, team bios, FAQ) is origina
 
 ## Rubric Requirements Checklist
 
-| Requirement | Status | Evidence |
-|-------------|--------|----------|
-| 5 HTML pages | ✅ Complete | index, about, menu, order, contact |
-| External CSS | ✅ Complete | style.css linked to all pages |
-| Responsive design | ✅ Complete | Media queries at 768px and 480px |
-| Typography adjustments | ✅ Complete | Font sizes reduced on tablet/mobile |
-| Image adjustments (srcset) | ✅ Complete | All images have srcset + sizes |
-| Pseudo-classes | ✅ Complete | :hover, :active, :focus on buttons, links, inputs |
-| JavaScript validation | ✅ Complete | Order form + contact form |
-| Mobile navigation menu | ✅ Complete | Hamburger menu with .show toggle |
-| Two locations | ✅ Complete | Main Street + Sea Point |
-| README with sitemap | ✅ Complete | Visual sitemap in README |
-| Changelog | ✅ Complete | Version history table |
-| References | ✅ Complete | Harvard style citations |
-| Semantic HTML | ✅ Complete | header, nav, main, section, footer |
-| Comments in code | ✅ Complete | CSS and JS have block comments |
-
----
-
-## Browser Compatibility
-
-| Browser | Version | Status |
-|---------|---------|--------|
-| Chrome | Latest | ✅ Working |
-| Firefox | Latest | ✅ Working |
-| Safari | Latest | ✅ Working |
-| Edge | Latest | ✅ Working |
+| Requirement | Status |
+|-------------|--------|
+| 5 HTML pages | ✅ Complete |
+| External CSS | ✅ Complete |
+| Responsive design | ✅ Complete |
+| Typography adjustments | ✅ Complete |
+| Image adjustments (srcset) | ✅ Complete |
+| Pseudo-classes | ✅ Complete |
+| JavaScript validation | ✅ Complete |
+| Mobile navigation menu | ✅ Complete |
+| Two locations | ✅ Complete |
+| README with sitemap | ✅ Complete |
+| Changelog | ✅ Complete |
+| References | ✅ Complete |
+| Semantic HTML | ✅ Complete |
+| Comments in code | ✅ Complete |
 
 ---
 
 ## How to Run This Project
 
-1. Clone the repository or download all files
-2. Open `index.html` in any modern web browser
-3. Navigate using the menu bar
-4. Test responsive design by resizing browser window or using DevTools
+1. Open `index.html` in any modern web browser
+2. Navigate using the menu bar
+3. Resize browser to test responsive design
 
 ---
 
-## Submission Information
-
-| | |
-|---|---|
-| **GitHub Repository** | [INSERT YOUR REPO LINK] |
-| **Submission Date** | 3 June 2026 |
-
----
-
-© 2026 The Daily Loaf. Educational project for WEDE5020 - Web Development (Introduction).
+© 2026 The Daily Loaf. Educational project for WEDE5020.

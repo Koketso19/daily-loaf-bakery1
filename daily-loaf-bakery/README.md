@@ -5,8 +5,8 @@
 | | |
 |---|---|
 | **Module** | Web Development (Introduction) - WEDE5020 |
-| **Student Name** | [YOUR NAME] |
-| **Student Number** | [YOUR NUMBER] |
+| **Student Name** | Koketso legoabe |
+| **Student Number** | [ST0901107] |
 | **Part** | Part 2 - CSS Styling & Responsive Design |
 | **Year** | 2026 |
 
