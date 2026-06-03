@@ -1,7 +1,186 @@
 /* ========================================
    THE DAILY LOAF - MAIN STYLESHEET
    ======================================== */
+/* ========================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ======================================== */
 
+/* TABLET (max-width: 768px) */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    
+    nav ul.show {
+        display: flex;
+    }
+    
+    .header-content {
+        flex-wrap: wrap;
+    }
+    
+    /* ===== FONT SIZE REDUCTIONS FOR TABLET ===== */
+    body {
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 1.4rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .page-header h2 {
+        font-size: 2rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .menu-item-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+    }
+    /* ===== END FONT SIZE REDUCTIONS ===== */
+    
+    .about-grid,
+    .order-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+
+/* MOBILE (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+    
+    .features-grid,
+    .specials-grid,
+    .team-grid,
+    .values-grid,
+    .locations-grid,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* ===== FONT SIZE REDUCTIONS FOR MOBILE ===== */
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .page-header h2 {
+        font-size: 1.6rem;
+    }
+    
+    .page-header p {
+        font-size: 0.9rem;
+    }
+    
+    .feature-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+    
+    .special-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .price {
+        font-size: 1rem;
+    }
+    
+    .menu-item-info h4 {
+        font-size: 1rem;
+    }
+    
+    .menu-item-info p {
+        font-size: 0.8rem;
+    }
+    
+    .menu-item-price {
+        font-size: 1rem;
+    }
+    
+    .footer-col h4 {
+        font-size: 1rem;
+    }
+    
+    .footer-col p,
+    .footer-col li {
+        font-size: 0.8rem;
+    }
+    /* ===== END FONT SIZE REDUCTIONS ===== */
+}
 * {
     margin: 0;
     padding: 0;
