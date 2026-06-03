@@ -38,12 +38,10 @@
             </div>
         </section>
 
-        <!-- Two Locations (Requirement: more than 1 location) -->
         <section class="locations">
             <div class="container">
                 <h3 class="section-title">Our Locations</h3>
                 <div class="locations-grid">
-                    <!-- Location 1 - Main Street -->
                     <div class="location-card">
                         <h4>📍 Main Street Bakery</h4>
                         <p class="address">42 Main Street<br>Woodstock, Cape Town<br>7925</p>
@@ -53,16 +51,11 @@
                         Closed Mondays</p>
                         <p class="phone">📞 (021) 123-4567</p>
                         <div class="map-placeholder">
-                            <img src="https://placehold.co/600x300/F5E6D3/8B5A2B?text=Map+-+Main+St"
-                                 srcset="https://placehold.co/300x150/F5E6D3/8B5A2B?text=Map+-+Main+St 300w,
-                                         https://placehold.co/600x300/F5E6D3/8B5A2B?text=Map+-+Main+St 600w"
-                                 sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, 350px"
-                                 alt="Main Street Location Map"
-                                 style="width:100%; border-radius:8px;">
+                          <img src="https://placehold.co/600x300/e8dcc8/8B5A2B?text=📍+42+Main+St,+Woodstock" 
+     style="width:100%; border-radius:8px;">
                         </div>
                     </div>
 
-                    <!-- Location 2 - Sea Point (FIXED with srcset) -->
                     <div class="location-card">
                         <h4>📍 Sea Point Cafe</h4>
                         <p class="address">89 Beach Road<br>Sea Point, Cape Town<br>8005</p>
@@ -71,46 +64,41 @@
                         (Takeaway only)</p>
                         <p class="phone">📞 (021) 987-6543</p>
                         <div class="map-placeholder">
-                            <img src="https://placehold.co/600x300/F5E6D3/8B5A2B?text=Map+-+Sea+Point"
-                                 srcset="https://placehold.co/300x150/F5E6D3/8B5A2B?text=Map+-+Sea+Point 300w,
-                                         https://placehold.co/600x300/F5E6D3/8B5A2B?text=Map+-+Sea+Point 600w"
-                                 sizes="(max-width: 480px) 90vw, (max-width: 768px) 45vw, 350px"
-                                 alt="Sea Point Location Map"
-                                 style="width:100%; border-radius:8px;">
+                      <img src="https://placehold.co/600x300/e8dcc8/8B5A2B?text=📍+89+Beach+Rd,+Sea+Point" 
+     style="width:100%; border-radius:8px;">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form -->
         <section class="contact-form-section">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-form">
                         <h3>Send Us a Message</h3>
-                        <form action="#" method="post" id="contactForm">
+                        <form id="contactForm">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="contact-name">Name *</label>
-                                    <input type="text" id="contact-name" name="name" required>
+                                    <input type="text" id="contact-name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="contact-email">Email *</label>
-                                    <input type="email" id="contact-email" name="email" required>
+                                    <input type="email" id="contact-email" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject *</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <input type="text" id="subject" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <textarea id="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
-                        <div id="contact-message" style="margin-top: 1rem; display: none;"></div>
+                        <div id="contact-message" style="display: none;"></div>
                     </div>
 
                     <div class="contact-info">
@@ -140,7 +128,6 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section class="faq">
             <div class="container">
                 <h3 class="section-title">Frequently Asked Questions</h3>
@@ -187,9 +174,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#">Instagram</a> | <a href="#">Facebook</a>
-                    </div>
+                    <p>Instagram | Facebook</p>
                 </div>
             </div>
             <div class="footer-bottom">

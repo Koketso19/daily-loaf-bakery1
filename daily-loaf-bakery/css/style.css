@@ -1,5 +1,6 @@
 /* ========================================
    THE DAILY LOAF - MAIN STYLESHEET
+   WEDE5020 - Part 2
    ======================================== */
 
 * {
@@ -146,7 +147,9 @@ nav ul li a.active {
 
 /* HERO SECTION */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), #8B5A2B;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.pexels.com/photos/14034048/pexels-photo-14034048.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    background-size: cover;
+    background-position: center;
     min-height: 500px;
     display: flex;
     align-items: center;
@@ -235,9 +238,8 @@ nav ul li a.active {
 
 .special-img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
-    background-color: #D4AF37;
 }
 
 .special-info {
@@ -304,6 +306,13 @@ nav ul li a.active {
 .about-image {
     border-radius: 12px;
     overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .values {
@@ -490,6 +499,11 @@ nav ul li a.active {
     overflow: hidden;
 }
 
+.map-placeholder img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 .contact-form-section {
     padding: 4rem 0;
 }
@@ -609,7 +623,6 @@ footer {
         flex-wrap: wrap;
     }
     
-    /* ===== FONT SIZE REDUCTIONS FOR TABLET ===== */
     body {
         font-size: 15px;
     }
@@ -641,19 +654,6 @@ footer {
     .page-header h2 {
         font-size: 2rem;
     }
-    
-    .feature-card h4 {
-        font-size: 1.2rem;
-    }
-    
-    .menu-item-info h4 {
-        font-size: 1.1rem;
-    }
-    
-    .price {
-        font-size: 1.1rem;
-    }
-    /* ===== END FONT SIZE REDUCTIONS ===== */
     
     .about-grid,
     .order-grid,
@@ -687,7 +687,6 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    /* ===== FONT SIZE REDUCTIONS FOR MOBILE ===== */
     body {
         font-size: 14px;
     }
@@ -720,45 +719,7 @@ footer {
         font-size: 1.6rem;
     }
     
-    .page-header p {
-        font-size: 0.9rem;
+    .special-img {
+        height: 180px;
     }
-    
-    .feature-card h4 {
-        font-size: 1.1rem;
-    }
-    
-    .feature-card p {
-        font-size: 0.9rem;
-    }
-    
-    .special-info h4 {
-        font-size: 1.1rem;
-    }
-    
-    .price {
-        font-size: 1rem;
-    }
-    
-    .menu-item-info h4 {
-        font-size: 1rem;
-    }
-    
-    .menu-item-info p {
-        font-size: 0.8rem;
-    }
-    
-    .menu-item-price {
-        font-size: 1rem;
-    }
-    
-    .footer-col h4 {
-        font-size: 1rem;
-    }
-    
-    .footer-col p,
-    .footer-col li {
-        font-size: 0.8rem;
-    }
-    /* ===== END FONT SIZE REDUCTIONS ===== */
 }

@@ -3,10 +3,9 @@
    Description: Form handling and mobile menu
    ======================================== */
 
-// Wait for DOM to fully load
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ---------- MOBILE MENU TOGGLE ----------
+    // MOBILE MENU TOGGLE
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('nav ul');
     
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // ---------- ORDER FORM HANDLING ----------
+    // ORDER FORM HANDLING
     const orderForm = document.getElementById('orderForm');
     const orderMessage = document.getElementById('order-message');
     
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         orderForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
             const name = document.getElementById('name')?.value || '';
             const email = document.getElementById('email')?.value || '';
             const phone = document.getElementById('phone')?.value || '';
@@ -32,11 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const pickupDate = document.getElementById('pickup-date')?.value || '';
             const pickupTime = document.getElementById('pickup-time')?.value || '';
             
-            // Get selected items
             const checkboxes = document.querySelectorAll('input[name="item"]:checked');
             const selectedItems = Array.from(checkboxes).map(cb => cb.value);
             
-            // Validation
             if (!name || !email || !phone || !pickupLocation || !pickupDate || !pickupTime) {
                 showMessage(orderMessage, 'Please fill in all required fields.', 'error');
                 return;
@@ -47,18 +43,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Success message
             showMessage(orderMessage, 
                 `Thank you ${name}! Your order has been received. Pickup at ${pickupLocation} on ${pickupDate} at ${pickupTime}. Confirmation sent to ${email}.`, 
                 'success'
             );
             
-            // Reset form
             orderForm.reset();
         });
     }
     
-    // ---------- CONTACT FORM HANDLING ----------
+    // CONTACT FORM HANDLING
     const contactForm = document.getElementById('contactForm');
     const contactMessage = document.getElementById('contact-message');
     
@@ -85,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Helper function to show messages
     function showMessage(element, message, type) {
         if (!element) return;
         
@@ -105,29 +98,10 @@ document.addEventListener('DOMContentLoaded', function() {
             element.style.border = '1px solid #f5c6cb';
         }
         
-        // Auto-hide after 5 seconds
         setTimeout(() => {
             element.style.display = 'none';
         }, 5000);
     }
     
-    // ---------- SMOOTH SCROLL FOR ANCHOR LINKS ----------
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
-    
-    // ---------- CURRENT YEAR IN FOOTER (AUTOMATIC UPDATE) ----------
-    const yearElement = document.querySelector('.footer-bottom p');
-    if (yearElement) {
-        const currentYear = new Date().getFullYear();
-        yearElement.innerHTML = yearElement.innerHTML.replace('2026', currentYear);
-    }
-    
-    console.log('The Daily Loaf website loaded successfully!');
+    console.log('The Daily Loaf - Part 2 loaded successfully!');
 });
