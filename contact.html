@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Daily Loaf | Contact Us</title>
+    <title>The Daily Loaf | Contact Us - Locations in Cape Town</title>
+    <meta name="description" content="Contact The Daily Loaf bakery. Visit us at our two Cape Town locations in Woodstock and Sea Point. Send us a message.">
+    <meta name="keywords" content="contact, bakery locations, Woodstock bakery, Sea Point cafe, Cape Town bakery, contact form">
+    <meta name="author" content="Koketso Legoabe">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -38,12 +41,10 @@
             </div>
         </section>
 
-        <!-- Two Locations (Requirement: more than 1 location) -->
         <section class="locations">
             <div class="container">
                 <h3 class="section-title">Our Locations</h3>
                 <div class="locations-grid">
-                    <!-- Location 1 -->
                     <div class="location-card">
                         <h4>📍 Main Street Bakery</h4>
                         <p class="address">42 Main Street<br>Woodstock, Cape Town<br>7925</p>
@@ -53,11 +54,11 @@
                         Closed Mondays</p>
                         <p class="phone">📞 (021) 123-4567</p>
                         <div class="map-placeholder">
-                            <img src="https://placehold.co/400x200/F5E6D3/8B5A2B?text=Map+-+Main+St" alt="Main Street Location Map">
+                          <img src="https://placehold.co/600x300/e8dcc8/8B5A2B?text=📍+42+Main+St,+Woodstock" 
+     style="width:100%; border-radius:8px;">
                         </div>
                     </div>
 
-                    <!-- Location 2 (Second location as required) -->
                     <div class="location-card">
                         <h4>📍 Sea Point Cafe</h4>
                         <p class="address">89 Beach Road<br>Sea Point, Cape Town<br>8005</p>
@@ -66,41 +67,41 @@
                         (Takeaway only)</p>
                         <p class="phone">📞 (021) 987-6543</p>
                         <div class="map-placeholder">
-                            <img src="https://placehold.co/400x200/F5E6D3/8B5A2B?text=Map+-+Sea+Point" alt="Sea Point Location Map">
+                      <img src="https://placehold.co/600x300/e8dcc8/8B5A2B?text=📍+89+Beach+Rd,+Sea+Point" 
+     style="width:100%; border-radius:8px;">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Form -->
         <section class="contact-form-section">
             <div class="container">
                 <div class="contact-grid">
                     <div class="contact-form">
                         <h3>Send Us a Message</h3>
-                        <form action="#" method="post" id="contactForm">
+                        <form id="contactForm">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="contact-name">Name *</label>
-                                    <input type="text" id="contact-name" name="name" required>
+                                    <input type="text" id="contact-name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="contact-email">Email *</label>
-                                    <input type="email" id="contact-email" name="email" required>
+                                    <input type="email" id="contact-email" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="subject">Subject *</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <input type="text" id="subject" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <textarea id="message" rows="5" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Send Message</button>
                         </form>
-                        <div id="contact-message" style="margin-top: 1rem; display: none;"></div>
+                        <div id="contact-message" style="display: none;"></div>
                     </div>
 
                     <div class="contact-info">
@@ -130,26 +131,25 @@
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section class="faq">
-            <div class="container">
-                <h3 class="section-title">Frequently Asked Questions</h3>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h4>Do you offer gluten-free options?</h4>
-                        <p>Yes! We have gluten-free sourdough available on Wednesdays and Saturdays.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Can I place a large order for an event?</h4>
-                        <p>Absolutely. Please email us at least 48 hours in advance for catering orders.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h4>Do you deliver?</h4>
-                        <p>Yes, free delivery within 5km on orders over R150.</p>
-                    </div>
-                </div>
+    <div class="container">
+        <h3 class="section-title">Frequently Asked Questions</h3>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4 class="faq-question">▶ Do you offer gluten-free options?</h4>
+                <p class="faq-answer">Yes! We have gluten-free sourdough available on Wednesdays and Saturdays.</p>
             </div>
-        </section>
+            <div class="faq-item">
+                <h4 class="faq-question">▶ Can I place a large order for an event?</h4>
+                <p class="faq-answer">Absolutely. Please email us at least 48 hours in advance for catering orders.</p>
+            </div>
+            <div class="faq-item">
+                <h4 class="faq-question">▶ Do you deliver?</h4>
+                <p class="faq-answer">Yes, free delivery within 5km on orders over R150.</p>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer>
@@ -177,9 +177,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#">Instagram</a> | <a href="#">Facebook</a>
-                    </div>
+                    <p>Instagram | Facebook</p>
                 </div>
             </div>
             <div class="footer-bottom">
