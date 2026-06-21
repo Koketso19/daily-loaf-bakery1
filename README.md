@@ -1,11 +1,25 @@
 # daily-loaf-bakery1
+##  Live Deployment
 
+**Website URL:** https://koketso19.github.io/daily-loaf-bakery1/
 
-# 🥖 The Daily Loaf - Artisan Bakery Website
+| Page | Link |
+|------|------|
+| Home | [index.html](https://koketso19.github.io/daily-loaf-bakery1/) |
+| About | [about.html](https://koketso19.github.io/daily-loaf-bakery1/about.html) |
+| Menu | [menu.html](https://koketso19.github.io/daily-loaf-bakery1/menu.html) |
+| Order | [order.html](https://koketso19.github.io/daily-loaf-bakery1/order.html) |
+| Contact | [contact.html](https://koketso19.github.io/daily-loaf-bakery1/contact.html) |
+
+**Deployment Platform:** GitHub Pages
+**Deployment Date:** June 2026
+**Status:**   All pages load without errors
+
+#   The Daily Loaf - Artisan Bakery Website
 
 ## Student Information
-- **Name:** [Your Name]
-- **Student Number:** [Your Number]
+- **Name:** [Koketso legoabe ]
+
 - **Subject:** Web Development
 - **Date:** 2026
 
@@ -50,3 +64,10 @@ A fully responsive 5-page website for "The Daily Loaf", an artisan bakery specia
 | Typography styles incomplete | Added font-family, size, weight styles |
 | Layout structure issues | Fixed Grid and Flexbox layouts |
 | Pseudo-classes incomplete | Added :hover, :active, :focus to all interactive elements |
+
+### Part 3 - New References
+GitHub. (2026). *GitHub Pages Documentation*. Available at: https://docs.github.com/en/pages (Accessed: 21 June 2026).
+
+Google. (2026). *Search Engine Optimization (SEO) Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 21 June 2026).
+
+W3Schools. (2026). *JavaScript DOM Events*. Available at: https://www.w3schools.com/js/js_events.asp (Accessed: 21 June 2026).
