@@ -1,24 +1,65 @@
 
----
+## Features Implemented
+
+### Part 2 Features
+- ✅ 5 HTML pages with navigation
+- ✅ External CSS with responsive design
+- ✅ Media queries (768px, 480px)
+- ✅ CSS Grid and Flexbox layouts
+- ✅ Pseudo-classes (:hover, :active, :focus)
+- ✅ JavaScript form validation
+- ✅ Mobile hamburger menu
+- ✅ Two locations on contact page
+
+### Part 3 New Features
+- ✅ SEO meta tags on all pages
+- ✅ FAQ Accordion (interactive)
+- ✅ Search bar on menu page
+- ✅ Updated README with Part 3 info
+
+## Deployment
+
+**Live Website:** [https://yourusername.github.io/daily-loaf-bakery1/](https://yourusername.github.io/daily-loaf-bakery1/)
+
+| Page | URL | Status |
+|------|-----|--------|
+| Home | /index.html | ✅ Working |
+| About | /about.html | ✅ Working |
+| Menu | /menu.html | ✅ Working |
+| Order | /order.html | ✅ Working |
+| Contact | /contact.html | ✅ Working |
+
+**Deployment Platform:** GitHub Pages
+**Deployment Date:** 21 June 2026
 
 ## Changelog
 
-### Part 1 Feedback Implementation
+### Part 2 Feedback Implementation
 
 | Feedback Received | Changes Implemented |
 |-------------------|---------------------|
-| Missing README document | Created comprehensive README with sitemap, changelog, references |
-| Missing sitemap | Added visual sitemap structure |
-| Missing changelog | Added detailed version history table |
+| Missing README document | Created comprehensive README |
+| Missing sitemap | Added visual sitemap |
+| Missing changelog | Added detailed version history |
 | Missing references | Added Harvard-style references |
-| Navigation menu issues | Fixed active states, added mobile menu toggle |
-| Insufficient content on about page | Added team bios, values section, bakery story |
-| Only one location shown | Added second location (Sea Point Cafe) |
-| Images not responsive | Added srcset and sizes attributes to all images |
-| Typography not scaling | Added font-size reductions in media queries |
-| No form validation | Added JavaScript validation for order and contact forms |
+| Navigation issues | Fixed active states, mobile menu |
+| Insufficient content | Added team bios, values, story |
+| Only one location | Added second location |
+| Images not responsive | Added srcset and sizes |
+| Typography not scaling | Added media query font sizes |
+| No form validation | Added JavaScript validation |
 
-### Part 2 Development Log
+### Part 3 Development Log
+
+| Date | Version | Changes |
+|------|---------|---------|
+| 2026-06-21 | v3.0 | Added SEO meta tags to all 5 pages |
+| 2026-06-21 | v3.1 | Added FAQ Accordion interactive feature |
+| 2026-06-21 | v3.2 | Added search bar on menu page |
+| 2026-06-21 | v3.3 | Updated README with Part 3 info |
+| 2026-06-21 | v3.4 | Deployed to GitHub Pages |
+
+### Part 2 Original Development Log
 
 | Date | Version | Changes |
 |------|---------|---------|
@@ -26,66 +67,74 @@
 | 2026-06-03 | v2.0 | Added external CSS with base styles |
 | 2026-06-03 | v2.1 | Added CSS Grid and Flexbox layouts |
 | 2026-06-03 | v2.2 | Added pseudo-classes (:hover, :active, :focus) |
-| 2026-06-03 | v2.3 | Added responsive media queries (768px, 480px) |
-| 2026-06-03 | v2.4 | Added typography adjustments in media queries |
-| 2026-06-03 | v2.5 | Added srcset for responsive images on all pages |
-| 2026-06-03 | v2.6 | Added JavaScript for mobile menu and form validation |
+| 2026-06-03 | v2.3 | Added responsive media queries |
+| 2026-06-03 | v2.4 | Added typography adjustments |
+| 2026-06-03 | v2.5 | Added srcset for responsive images |
+| 2026-06-03 | v2.6 | Added JavaScript for mobile menu and forms |
 | 2026-06-03 | v2.7 | Added two locations on contact page |
-| 2026-06-03 | v2.8 | Completed README with sitemap, changelog, references |
-
----
+| 2026-06-03 | v2.8 | Completed README with sitemap, changelog |
 
 ## References (Harvard Style)
 
 ### Fonts
-Google Fonts. (2026). *Playfair Display & Roboto*. Available at: https://fonts.google.com (Accessed: 3 June 2026).
+Google Fonts. (2026). *Playfair Display & Roboto*. Available at: https://fonts.google.com (Accessed: 21 June 2026).
 
 ### Code References
-Mozilla Developer Network. (2026). *CSS Grid Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout (Accessed: 3 June 2026).
+Mozilla Developer Network. (2026). *CSS Grid Layout*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout (Accessed: 21 June 2026).
 
-Mozilla Developer Network. (2026). *CSS Flexbox*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout (Accessed: 3 June 2026).
+Mozilla Developer Network. (2026). *CSS Flexbox*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout (Accessed: 21 June 2026).
 
-Mozilla Developer Network. (2026). *Media Queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries (Accessed: 3 June 2026).
+Mozilla Developer Network. (2026). *Media Queries*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries (Accessed: 21 June 2026).
 
-Mozilla Developer Network. (2026). *Responsive Images (srcset)*. Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images (Accessed: 3 June 2026).
+Mozilla Developer Network. (2026). *Responsive Images (srcset)*. Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images (Accessed: 21 June 2026).
 
-W3Schools. (2026). *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 3 June 2026).
+W3Schools. (2026). *JavaScript Form Validation*. Available at: https://www.w3schools.com/js/js_validation.asp (Accessed: 21 June 2026).
 
 ### Images
-Placehold.co. (2026). *Placeholder Image Service*. Available at: https://placehold.co (Accessed: 3 June 2026).
+Picsum Photos. (2026). *Free Stock Photos*. Available at: https://picsum.photos (Accessed: 21 June 2026).
+
+Placehold.co. (2026). *Placeholder Image Service*. Available at: https://placehold.co (Accessed: 21 June 2026).
+
+### SEO
+Google. (2026). *Search Engine Optimization (SEO) Starter Guide*. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 21 June 2026).
+
+### Deployment
+GitHub. (2026). *GitHub Pages Documentation*. Available at: https://docs.github.com/en/pages (Accessed: 21 June 2026).
 
 ### Content
-All written content (bakery story, menu descriptions, team bios, FAQ) is original work created for this assignment.
-
----
+All written content (bakery story, menu descriptions, team bios, FAQ) is original work created for this assignment by Koketso Legoabe.
 
 ## Rubric Requirements Checklist
 
-| Requirement | Status |
-|-------------|--------|
-| 5 HTML pages | ✅ Complete |
-| External CSS | ✅ Complete |
-| Responsive design | ✅ Complete |
-| Typography adjustments | ✅ Complete |
-| Image adjustments (srcset) | ✅ Complete |
-| Pseudo-classes | ✅ Complete |
-| JavaScript validation | ✅ Complete |
-| Mobile navigation menu | ✅ Complete |
-| Two locations | ✅ Complete |
-| README with sitemap | ✅ Complete |
-| Changelog | ✅ Complete |
-| References | ✅ Complete |
-| Semantic HTML | ✅ Complete |
-| Comments in code | ✅ Complete |
-
----
+| Requirement | Part 2 | Part 3 |
+|-------------|--------|--------|
+| 5 HTML pages | ✅ | ✅ |
+| External CSS | ✅ | ✅ |
+| Responsive design | ✅ | ✅ |
+| Typography adjustments | ✅ | ✅ |
+| Image adjustments (srcset) | ✅ | ✅ |
+| Pseudo-classes | ✅ | ✅ |
+| JavaScript validation | ✅ | ✅ |
+| Mobile navigation menu | ✅ | ✅ |
+| Two locations | ✅ | ✅ |
+| README with sitemap | ✅ | ✅ |
+| Changelog | ✅ | ✅ |
+| References | ✅ | ✅ |
+| **SEO Meta Tags** | ❌ | ✅ |
+| **FAQ Accordion** | ❌ | ✅ |
+| **Menu Search** | ❌ | ✅ |
+| **Deployment** | ❌ | ✅ |
 
 ## How to Run This Project
 
-1. Open `index.html` in any modern web browser
-2. Navigate using the menu bar
-3. Resize browser to test responsive design
+### Locally
+1. Clone the repository
+2. Open `index.html` in any modern browser
+3. OR run `npx serve .` and open http://localhost:3000
+
+### Live
+Visit: [https://yourusername.github.io/daily-loaf-bakery1/](https://yourusername.github.io/daily-loaf-bakery1/)
 
 ---
 
-© 2026 The Daily Loaf. Educational project for WEDE5020.
+© 2026 The Daily Loaf. Educational project for WEDE5020 by Koketso Legoabe.

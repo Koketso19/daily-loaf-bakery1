@@ -105,3 +105,85 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('The Daily Loaf - Part 2 loaded successfully!');
 });
+
+
+/* ========================================
+   PART 3 - NEW FUNCTIONALITY
+   ======================================== */
+
+// ---------- FAQ ACCORDION (Part 3) ----------
+document.querySelectorAll('.faq-item').forEach(function(item) {
+    var question = item.querySelector('.faq-question');
+    var answer = item.querySelector('.faq-answer');
+    
+    if (question && answer) {
+        // Hide answers initially
+        answer.style.display = 'none';
+        answer.style.padding = '0 0 10px 0';
+        answer.style.transition = 'all 0.3s ease';
+        
+        question.style.cursor = 'pointer';
+        question.style.padding = '10px 0';
+        question.style.margin = '0';
+        question.style.fontSize = '1rem';
+        question.style.color = '#8B5A2B';
+        
+        question.addEventListener('click', function() {
+            // Close all other answers
+            document.querySelectorAll('.faq-answer').forEach(function(p) {
+                if (p !== answer) {
+                    p.style.display = 'none';
+                }
+            });
+            
+            // Toggle current answer
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    }
+});
+
+// ---------- MENU SEARCH (Part 3) ----------
+const menuSearch = document.getElementById('menuSearch');
+if (menuSearch) {
+    menuSearch.addEventListener('keyup', function() {
+        const filter = this.value.toLowerCase().trim();
+        const menuItems = document.querySelectorAll('.menu-item');
+        let foundCount = 0;
+        
+        menuItems.forEach(function(item) {
+            const text = item.textContent.toLowerCase();
+            if (filter === '' || text.includes(filter)) {
+                item.style.display = 'flex';
+                item.style.opacity = '1';
+                foundCount++;
+            } else {
+                item.style.display = 'none';
+                item.style.opacity = '0';
+            }
+        });
+        
+        // Show message if no results
+        const existingMsg = document.querySelector('.search-result-msg');
+        if (foundCount === 0 && filter !== '') {
+            if (!existingMsg) {
+                const msg = document.createElement('p');
+                msg.className = 'search-result-msg';
+                msg.style.textAlign = 'center';
+                msg.style.padding = '20px';
+                msg.style.color = '#999';
+                msg.innerHTML = '😕 No menu items found for "' + filter + '"';
+                menuSearch.parentNode.appendChild(msg);
+            }
+        } else {
+            if (existingMsg) {
+                existingMsg.remove();
+            }
+        }
+    });
+}
+
+console.log('Part 3 features loaded successfully!');

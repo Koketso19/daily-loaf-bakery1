@@ -723,3 +723,33 @@ footer {
         height: 180px;
     }
 }
+
+/* ========================================
+   PART 3 - NEW STYLES
+   ======================================== */
+
+/* FAQ Accordion */
+.faq-question {
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #D4AF37 !important;
+}
+
+.faq-answer {
+    padding: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+/* Search Bar */
+#menuSearch:focus {
+    outline: none;
+    border-color: #D4AF37 !important;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Active state for search */
+#menuSearch:active {
+    transform: scale(0.98);
+}
