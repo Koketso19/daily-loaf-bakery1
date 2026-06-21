@@ -38,3 +38,15 @@ A fully responsive 5-page website for "The Daily Loaf", an artisan bakery specia
 - GitHub Pages (hosting)
 
 ## Sitemap
+
+### Part 2 Feedback Implementation
+
+| Feedback Received | Changes Implemented |
+|-------------------|---------------------|
+| Missing responsive images | Added srcset and sizes attributes to all images |
+| Missing changelog | Added detailed changelog with version history |
+| Missing references | Added Harvard-style references |
+| CSS default styles incomplete | Added full reset and base styles |
+| Typography styles incomplete | Added font-family, size, weight styles |
+| Layout structure issues | Fixed Grid and Flexbox layouts |
+| Pseudo-classes incomplete | Added :hover, :active, :focus to all interactive elements |
